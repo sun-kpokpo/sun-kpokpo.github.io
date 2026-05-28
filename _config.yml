@@ -20,8 +20,8 @@ icon: 🤖
 url: https://sun-kpokpo.github.io # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: true # Passer à true affiche la date de dernière mise à jour automatique
-impressum_path: 
-back_to_top: true 
+impressum_path:
+back_to_top: true
 
 # -----------------------------------------------------------------------------
 # Social Integration

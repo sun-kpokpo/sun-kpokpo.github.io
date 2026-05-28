@@ -14,9 +14,9 @@ in synchronized formation. Beat-detected from music, coordinated in
 real-time over ROS2 with a leader-follower architecture
 ([see the project](https://github.com/dirennoukpo/MUTO-RS-CHOREGRAGPHY)).
 
-Watching that, I asked him: *what if the robot just...
+Watching that, I asked him: _what if the robot just...
 learned to do that on its own? without anyone writing the
-choreography?*
+choreography?_
 
 That single question became the whole MUTO-RS project.
 
@@ -48,7 +48,6 @@ After roughly 15 hours of training on an RTX A6000 with 4096 parallel
 environments, the result was memorable: robot pinned to the ground,
 legs moving in every direction. Very Orochimaru energy.😅
 
-
 <div class="text-center">
 {% include video.liquid path="assets/video/muto-push-recovery.mp4" class="img-fluid rounded z-depth-1 mx-auto d-block" controls=true %}
 <div class="caption">
@@ -62,14 +61,12 @@ the dynamics from the start. Before launching any new training run,
 we're taking the time to properly set up the digital twin and make sure
 no problem comes from the simulation itself.
 
-
 <div class="text-center">
 {% include video.liquid path="assets/video/muto-spawning&setup.mp4" class="img-fluid rounded z-depth-1 mx-auto d-block" controls=true %}
 <div class="caption">
     MUTO-RS spawning and setup in IsaacSim
 </div>
 </div>
-
 
 ## Where We Are
 
