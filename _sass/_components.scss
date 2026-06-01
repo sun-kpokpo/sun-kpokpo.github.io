@@ -56,12 +56,16 @@ ul.task-list input[type="checkbox"] {
 // Profile
 
 .profile {
-  width: 100%;
+  width: 70%;
+  max-width: 220px;
+  margin: 0 auto 1rem auto;
 
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
     font-family: monospace;
+    font-size: 0.85rem;
+    text-align: center;
 
     p {
       display: inline-block;
@@ -71,22 +75,33 @@ ul.task-list input[type="checkbox"] {
 }
 
 .profile.float-right {
-  margin-left: 1rem;
+  margin-left: auto;
 }
 
 .profile.float-left {
-  margin-right: 1rem;
+  margin-right: auto;
 }
 
 @media (min-width: 576px) {
   .profile {
-    width: 30%;
+    width: 22%;
+    min-width: 155px;
+    max-width: 190px;
+    margin-bottom: 0.75rem;
 
     .address {
       p {
         display: block;
       }
     }
+  }
+
+  .profile.float-right {
+    margin-left: 2rem;
+  }
+
+  .profile.float-left {
+    margin-right: 2rem;
   }
 }
 

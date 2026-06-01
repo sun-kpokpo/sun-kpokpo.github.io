@@ -9,7 +9,7 @@ category: work
 
 ## How It Started
 
-At Arduino Days 2025, Diren presented something genuinely impressive: a multi-robot choreography system where six MUTO hexapods danced
+At Arduino Days 2026, Diren presented something genuinely impressive: a multi-robot choreography system where six MUTO hexapods danced
 in synchronized formation. Beat-detected from music, coordinated in
 real-time over ROS2 with a leader-follower architecture
 ([see the project](https://github.com/dirennoukpo/MUTO-RS-CHOREGRAGPHY)).
