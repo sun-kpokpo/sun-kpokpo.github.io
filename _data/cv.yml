@@ -1,12 +1,2 @@
 cv:
-  name: Your Name
-  label: Your Title
-  email: your.email@example.com
-  location: Your Location
-  image: ""
-  summary: Your professional summary
-
-  social_networks: []
-  address: {}
-
   sections: {}

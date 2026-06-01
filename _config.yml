@@ -168,6 +168,8 @@ collections:
     output: true
   projects:
     output: true
+  contributions:
+    output: true
   teachings:
     output: true
 
@@ -286,7 +288,7 @@ display_categories: ["research"] # these categories will be displayed on the fro
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [KPOKPO] # Remplace Einstein pour te mettre en valeur
+  last_name: [KPOKPO]
   first_name: [Sunday, S., S. B.]
 
   style: apa

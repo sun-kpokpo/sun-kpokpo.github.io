@@ -1,0 +1,45 @@
+<div class="col mb-4">
+  <div class="card h-100 hoverable">
+    {% if contribution.img %}
+      {% include figure.liquid loading="eager" path=contribution.img sizes="(min-width: 768px) 420px, 95vw" alt=contribution.title class="card-img-top" %}
+    {% endif %}
+    <div class="card-body">
+      <h2 class="card-title">{{ contribution.title }}</h2>
+      <p class="card-text mb-2">{{ contribution.description }}</p>
+
+      {% if contribution.context %}
+        <p class="card-text font-weight-light mb-3">{{ contribution.context }}</p>
+      {% endif %}
+
+      {% if contribution.role or contribution.organization or contribution.period %}
+        <p class="post-meta mb-3">
+          {% if contribution.role %}{{ contribution.role }}{% endif %}
+          {% if contribution.organization %}&nbsp; &middot; &nbsp;{{ contribution.organization }}{% endif %}
+          {% if contribution.period %}&nbsp; &middot; &nbsp;{{ contribution.period }}{% endif %}
+        </p>
+      {% endif %}
+
+      {% if contribution.highlights %}
+        <ul class="card-text pl-3">
+          {% for highlight in contribution.highlights %}
+            <li>{{ highlight }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      {% if contribution.skills %}
+        <p class="post-tags mb-3">
+          {% for skill in contribution.skills %}
+            <span class="badge badge-light">{{ skill }}</span>
+          {% endfor %}
+        </p>
+      {% endif %}
+
+      {% if contribution.external_url %}
+        <a class="btn btn-sm btn-outline-primary" href="{{ contribution.external_url }}" target="_blank" rel="noopener noreferrer">
+          View project
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</div>
