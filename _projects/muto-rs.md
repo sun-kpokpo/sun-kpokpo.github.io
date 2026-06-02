@@ -5,6 +5,7 @@ description: Sim-to-Real RL Locomotion for an 18-DOF Hexapod
 img: assets/img/projects/muto_thumbnail1.jpg
 importance: 1
 category: work
+github: https://github.com/dirennoukpo/MUTO_RL/tree/sun/rl_training
 ---
 
 ## How It Started
