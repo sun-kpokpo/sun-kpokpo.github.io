@@ -30,7 +30,7 @@ The current model results are:
 - **mAP50-95:** 70.4%
 - **Model:** YOLOv8n
 
-{% include figure.liquid path="assets/img/projects/x-arm-detection.jpg" caption="YOLO-based colored object detection used by the perception module." width="520" class="img-fluid rounded z-depth-1 mx-auto d-block" %}
+{% include figure.liquid path="assets/img/projects/x-arm-detection.jpg" caption="YOLO-based colored object detection used by the perception module." width="350" class="img-fluid rounded z-depth-1 mx-auto d-block" %}
 
 ## Calibration
 
