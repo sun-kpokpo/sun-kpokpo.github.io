@@ -31,7 +31,7 @@ The perception stack has evolved from direct board-state detection toward a more
 
 Once YOLO detects the pawns in the camera frame and the Q-learning agent selects a move, the homography maps the selected board target into robot-frame `x, y` coordinates. The fixed `z` coordinate is then added before passing the target to the execution layer. This matters because the robot does not only need to know _which_ cell is occupied. It also needs a metric target location that the control module can use to move the arm in the physical workspace.
 
-{% include figure.liquid path="assets/img/projects/robotic-arm_visuel.png" caption="YOLO-based detection." width="450" class="img-fluid rounded z-depth-1 mx-auto d-block" %}
+{% include figure.liquid path="assets/img/projects/robotic-arm_visuel.jpeg" caption="YOLO-based detection." width="450" class="img-fluid rounded z-depth-1 mx-auto d-block" %}
 
 ## Decision
 
