@@ -2,7 +2,7 @@
 layout: page
 title: TicTacToeRL-RobotArm
 description: Three Men's Morris with a DOFBOT arm, Q-learning, computer vision, and real-world manipulation.
-img: assets/img/projects/tictactoe-rl-cover.jpg
+img: assets/img/projects/robotic-arm.png
 importance: 2
 category: work
 github: https://github.com/sun-kpokpo/TicTacToeRL-RobotArm/tree/feature/decision-qlearning
@@ -22,7 +22,6 @@ In the placement phase, each player places three pieces on empty points, trying 
 
 The physical platform is the Yahboom DOFBOT Pi, a small educational 6-DOF robotic arm driven by serial bus servos. In this project, the arm is used as a low-cost manipulation platform: it picks or places game pieces on a physical board using vision-derived target coordinates.
 
-{% include figure.liquid path="assets/img/projects/tictactoe-rl-dofbot.jpg" caption="Yahboom DOFBOT Pi used for the physical Three Men's Morris setup." width="400" class="img-fluid rounded z-depth-1 mx-auto d-block" %}
 
 Early execution was based on hard-coded joint angles for each board position. That worked for controlled demonstrations, but it does not scale well when the board pose changes or when calibration drifts. The current direction is to move toward inverse kinematics so the robot can execute moves from target coordinates rather than fixed angle scripts.
 
@@ -31,6 +30,8 @@ Early execution was based on hard-coded joint angles for each board position. Th
 The perception stack has evolved from direct board-state detection toward a more geometric calibration pipeline. At the current stage, we use OpenCV ArUco markers to calibrate the board plane. I recorded the physical positions of the four ArUco markers in the robot frame, with a fixed `z` height for the board plane. OpenCV detects the same markers in the camera frame, and these corresponding points are used to compute a homography.
 
 Once YOLO detects the pawns in the camera frame and the Q-learning agent selects a move, the homography maps the selected board target into robot-frame `x, y` coordinates. The fixed `z` coordinate is then added before passing the target to the execution layer. This matters because the robot does not only need to know _which_ cell is occupied. It also needs a metric target location that the control module can use to move the arm in the physical workspace.
+
+{% include figure.liquid path="assets/img/projects/robotic-arm_visuel.png" caption="YOLO-based detection." width="450" class="img-fluid rounded z-depth-1 mx-auto d-block" %}
 
 ## Decision
 
